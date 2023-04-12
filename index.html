@@ -16,7 +16,7 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+      @import url("@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');");
 
       .attribution {
         position: absolute;
@@ -26,12 +26,12 @@
       }
       .attribution a,
       .attribution p {
-        font-family: "Roboto";
+        font-family: "Outfit";
         color: hsl(228, 45%, 44%);
       }
 
       body {
-        background-color: #c1e2ff;
+        background-color: hsl(220, 15%, 55%);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -51,18 +51,19 @@
       .qr-code img {
         border-radius: 10px;
       }
-      .text-area h2 {
-        font-family: "Roboto";
+      .text-area h1 {
+        font-family: "Outfit";
         font-size: 22px;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.2;
-        color: rgb(1, 2, 48);
+        color: hsl(218, 44%, 22%);
       }
       .text-area p {
-        font-family: "Roboto";
-        font-size: 14px;
+        font-family: "Outfit";
+        font-size: 15px;
         font-weight: 400;
         line-height: 1.2;
+        color: hsl(212, 45%, 89%);
       }
       .text-area {
         padding: 10px;
@@ -70,31 +71,34 @@
     </style>
   </head>
   <body>
-    <div class="card">
-      <div class="qr-code">
-        <img
-          src="./images/image-qr-code.png"
-          width="100%"
-          height="auto"
-          alt="qr code to scan"
-        />
+    <main role="main">
+      <div class="card">
+        <div class="qr-code">
+          <img
+            src="./images/image-qr-code.png"
+            width="100%"
+            height="auto"
+            alt="qr code to scan"
+          />
+        </div>
+        <div class="text-area">
+          <h1>Improve your front-end skills by building projects</h1>
+          <p>
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
       </div>
-      <div class="text-area">
-        <h2>Improve your front-end skills by building projects</h2>
-        <p>
-          Scan the QR code to visit Frontend Mentor and take your coding skills
-          to the next level
-        </p>
-      </div>
-    </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="https://www.frontendmentor.io/profile/bascaa">Silviu Iordache</a
-      >.
-    </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/bascaa"
+          >Silviu Iordache</a
+        >.
+      </div>
+    </main>
   </body>
 </html>
